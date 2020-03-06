@@ -24,3 +24,17 @@ def gen_even():
         yield even
         even = not even
 ```
+
+## The long way home
+Contributed by: [Hinomupi](https://github.com/Hinomupi)
+haha comparisons
+
+```python
+def isEven(x):
+    if x != x//1:
+        return x == x//1
+    elif x == x//1:
+        if x == 0: return True
+        elif x != 0:
+            if x != 0 and x == x//1: return isEven(x - abs(x)/x) is not (1 == 1)
+```
